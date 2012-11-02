@@ -1,0 +1,65 @@
+.tabular {
+    width: 460px;
+    /*
+     * A table layout of auto allows the table
+     * to expand to fit the contents.
+     */
+    table-layout: auto;
+    /*
+     * Added for Opera, otherwise the table is not indented as it needs to be.
+     * (inline-block also works)
+     */
+    display: table-cell;
+    /*
+     * Remove spacing between table cells - it looks tidier and uses less space.
+     */
+    border-collapse: collapse;
+    border-spacing: 0;
+    /*
+     * The negative top margin brings the column headings into
+     * line with the label. The bottom margin is about the
+     * right placement for help text.
+     */
+    margin: -4px 0 10px 0;
+}
+
+.tabular td, .tabular th {
+    width: auto;
+    /* Remove Perch's left and right padding on table cells */
+    padding: 6px 0;
+    margin: 0;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.tabular .text {
+    /* Force the input fields to be the width of the containing table cell */
+    width: 100%;
+    text-align: center;
+    /* Remove Perch's form cell formatting */
+    border: none;
+    box-shadow: none;
+    background: none;
+    /* Remove Perch's left and right padding on table cells */
+    padding: 4px 0;
+    margin: 0;
+}
+
+.tabular th {
+    /* Remove the default Perch background on table headers */
+    background: none;
+    text-align: center;
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+}
+
+.tabular tr:last-child td {
+    border-bottom: 1px solid #999;
+}
+
+.tabular tbody tr:nth-child(odd) {
+    background: #FCFCFC;
+}
+
+.tabular tr:hover {
+    background: none;
+}
