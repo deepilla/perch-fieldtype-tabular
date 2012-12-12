@@ -9,7 +9,7 @@ A [custom field type](http://docs.grabaperch.com/api/field-types/ "Perch CMS Doc
 
 ##Installation
 
-1. [Download](https://github.com/deepilla/perch-fieldtype-tabular/downloads) the perch-fieldtype-tabular zip file (or tarball if you prefer).
+1. Download the perch-fieldtype-tabular zip file.
 2. Extract the *tabular* folder to *perch/addons/fieldtypes*.
 
 ##Usage
@@ -34,8 +34,9 @@ Add the following to your Perch template:
 
 ##To Do
 
-1. Do something sensible with mandatory fields. Currently saving always fails on *tabular* fields that have `required="true"` set.
-2. Recover table data after form validation errors. If an error occurs when saving a region (let's say you forget to fill in a required *textarea* field), the page reloads with all of your entered data intact. But *tabular* fields revert back to their previously-saved state.
+1. Add support for row headers.
+2. Do something sensible with mandatory fields. Currently saving always fails on *tabular* fields that have `required="true"` set.
+3. Recover table data after form validation errors. If an error occurs when saving a region (let's say you forget to fill in a required *textarea* field), the page reloads with all of your entered data intact. But *tabular* fields revert back to their previously-saved state.
 
 ##Feedback
 Contact me [@deepilla](https://twitter.com/deepilla).
