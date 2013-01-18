@@ -34,9 +34,10 @@ Add the following to your Perch template:
 
 ##To Do
 
-1. Add support for row headers.
-2. Do something sensible with mandatory fields. Currently saving always fails on *tabular* fields that have `required="true"` set.
-3. Recover table data after form validation errors. If an error occurs when saving a region (let's say you forget to fill in a required *textarea* field), the page reloads with all of your entered data intact. But *tabular* fields revert back to their previously-saved state.
+1. Make compatible with PHP 5.2 (the minimum required PHP version for Perch). PHP syntax errors have been reported with PHP 5.2.17.
+2. Add support for row headers.
+3. Do something sensible with mandatory fields. Currently saving always fails on *tabular* fields that have `required="true"` set.
+4. Recover table data after form validation errors. If an error occurs when saving a region (let's say you forget to fill in a required *textarea* field), the page reloads with all of your entered data intact. But *tabular* fields revert back to their previously-saved state.
 
 ##Feedback
 Contact me [@deepilla](https://twitter.com/deepilla).
