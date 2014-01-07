@@ -89,9 +89,9 @@ class PerchFieldType_tabular extends PerchAPI_FieldType
          * used to pre-populate the table in the admin panel.
          */
 
-        if (isset($details[$id]) && is_array($details[$id])) {
-            if (isset($details[$id][self::DATA_KEY]) && is_array($details[$id][self::DATA_KEY])) {
-                $data = $details[$id][self::DATA_KEY];
+        if (isset($details[$input_id]) && is_array($details[$input_id])) {
+            if (isset($details[$input_id][self::DATA_KEY]) && is_array($details[$input_id][self::DATA_KEY])) {
+                $data = $details[$input_id][self::DATA_KEY];
             }
         }
 
